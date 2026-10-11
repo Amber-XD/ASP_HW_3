@@ -1,0 +1,19 @@
+﻿@{
+    var product = ViewBag.Product;
+}
+
+<div class="container py-5">
+    <div class="card shadow-lg product-details">
+        <div class="card-body text-center">
+            <h1>@product.Name</h1>
+
+            <p class="fs-5">
+                Ціна: <strong>@product.Price грн</strong>
+            </p>
+
+            <a href="/Product/Index" class="btn btn-primary">
+                ← Назад до товарів
+            </a>
+        </div>
+    </div>
+</div>

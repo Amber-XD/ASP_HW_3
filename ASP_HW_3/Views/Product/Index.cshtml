@@ -1,0 +1,22 @@
+﻿@model List<ASP_HW_3.Models.Product>
+
+<div class="container py-5">
+    <h1 class="text-center mb-5">Товари</h1>
+
+    <div class="row g-3">
+        @foreach (var product in Model)
+        {
+            <div class="col-md-4">
+                <a href="/Product/Details/@product.Id"
+                   class="text-decoration-none">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <h4>@product.Name</h4>
+                            <p>Ціна: @product.Price грн</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
